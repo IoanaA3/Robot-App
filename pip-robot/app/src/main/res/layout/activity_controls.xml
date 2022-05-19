@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ControlsActivity">
+
+    <Button
+        android:id="@+id/art1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="1"
+        android:backgroundTint="@color/pip"
+        app:layout_constraintEnd_toStartOf="@+id/art2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/art2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="2"
+        android:backgroundTint="@color/pip"
+        app:layout_constraintEnd_toStartOf="@+id/art3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/art1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/art3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="3"
+        android:backgroundTint="@color/pip"
+        app:layout_constraintEnd_toStartOf="@+id/art4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/art2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/art4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="4"
+        android:backgroundTint="@color/pip"
+        app:layout_constraintEnd_toStartOf="@+id/art5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/art3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/art5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="5"
+        android:backgroundTint="@color/pip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/art4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
